@@ -18,7 +18,7 @@ public class Ciclabile {
     }
 
     public int getElementoSuccessivo() {
-        if (posizione < numeri.length){
+        if (hasAncoraElementi()){
             return numeri[posizione++];
         }
         else {
@@ -30,4 +30,12 @@ public class Ciclabile {
     public boolean hasAncoraElementi() {
         return posizione < numeri.length;
     }
+
+    public int getPosizione() {
+       return posizione;
+    }
+
+    public int getLunghezza() {
+       return numeri.length;
+}
 }
