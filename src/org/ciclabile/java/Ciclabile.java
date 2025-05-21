@@ -31,13 +31,6 @@ public class Ciclabile {
         return posizione < numeri.length;
     }
 
-    public int getPosizione() {
-        return posizione;
-    }
-
-    public int getLunghezza() {
-        return numeri.length;
-    }
 
     // bonus
     // Metodo per aggiungere un elemento (bonus)

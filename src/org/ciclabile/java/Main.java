@@ -12,11 +12,12 @@ public class Main {
         System.out.println(numeriInteri.hasAncoraElementi());
 
         // metodo per aggiungere numeri
-        while (numeriInteri.getPosizione() < numeriInteri.getLunghezza()) {
-            System.out.println("Premi INVIO per stampare il prossimo numero.");
+       while (numeriInteri.hasAncoraElementi()) {
+            System.out.println("Premi INVIO per stampare il prossimo numero...");
             scanner.nextLine();
             System.out.println(numeriInteri.getElementoSuccessivo());
         }
+
  // metodo bonus
         Ciclabile interiNumeri = new Ciclabile();
         interiNumeri.addElemento(6);
@@ -27,6 +28,7 @@ public class Main {
        
         System.out.println(interiNumeri);
           while (interiNumeri.hasAncoraElementi()) {
+             System.out.println("Premi INVIO per stampare il prossimo numero...");
             
         
             scanner.nextLine();
